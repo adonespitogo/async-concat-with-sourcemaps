@@ -1,6 +1,6 @@
 {
   "name": "async-concat-with-sourcemaps",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Concatenate file contents with a custom separator and generate a source map",
   "homepage": "http://github.com/adonespitogo/async-concat-with-sourcemaps",
   "repository": "git://github.com/adonespitogo/async-concat-with-sourcemaps.git",

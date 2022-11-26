@@ -62,7 +62,7 @@ The resulting source map of the concatenated files (string). Returns a `Promise<
 
 [coveralls-image]: https://img.shields.io/coveralls/adonespitogo/async-concat-with-sourcemaps.svg
 [coveralls-url]: https://coveralls.io/r/adonespitogo/async-concat-with-sourcemaps?branch=master
-[npm-image]: https://img.shields.io/npm/v/concat-with-sourcemaps.svg
-[npm-url]: https://www.npmjs.com/package/concat-with-sourcemaps
+[npm-image]: https://img.shields.io/npm/v/async-concat-with-sourcemaps.svg
+[npm-url]: https://www.npmjs.com/package/async-concat-with-sourcemaps
 [travis-image]: https://img.shields.io/travis/adonespitogo/async-concat-with-sourcemaps.svg
 [travis-url]: https://travis-ci.org/adonespitogo/async-concat-with-sourcemaps
