@@ -44,7 +44,7 @@ Parameters:
 
 #### concat.add(fileName, content, sourceMap)
 
-Add a file to the output file. Returns a `promise`.
+Add a file to the output file. Returns a `Promise<void>`.
 
 Parameters:
 
@@ -58,7 +58,7 @@ The resulting concatenated file content (Buffer). Returns a `Promise<Buffer>`.
 
 #### concat.sourceMap()
 
-The resulting source map of the concatenated files (string). Returns a `Promise<string>`.
+The resulting source map of the concatenated files (string). Returns a `Promise<string | undefined>`.
 
 [coveralls-image]: https://img.shields.io/coveralls/adonespitogo/async-concat-with-sourcemaps.svg
 [coveralls-url]: https://coveralls.io/r/adonespitogo/async-concat-with-sourcemaps?branch=master
