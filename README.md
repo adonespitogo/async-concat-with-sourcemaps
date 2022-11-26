@@ -60,9 +60,9 @@ The resulting concatenated file content (Buffer). Returns a `Promise<Buffer>`.
 
 The resulting source map of the concatenated files (string). Returns a `Promise<string>`.
 
-[coveralls-image]: https://img.shields.io/coveralls/floridoo/concat-with-sourcemaps.svg
-[coveralls-url]: https://coveralls.io/r/floridoo/concat-with-sourcemaps?branch=master
+[coveralls-image]: https://img.shields.io/coveralls/adonespitogo/async-concat-with-sourcemaps.svg
+[coveralls-url]: https://coveralls.io/r/adonespitogo/async-concat-with-sourcemaps?branch=master
 [npm-image]: https://img.shields.io/npm/v/concat-with-sourcemaps.svg
 [npm-url]: https://www.npmjs.com/package/concat-with-sourcemaps
-[travis-image]: https://img.shields.io/travis/floridoo/concat-with-sourcemaps.svg
-[travis-url]: https://travis-ci.org/floridoo/concat-with-sourcemaps
+[travis-image]: https://img.shields.io/travis/adonespitogo/async-concat-with-sourcemaps.svg
+[travis-url]: https://travis-ci.org/adonespitogo/async-concat-with-sourcemaps
