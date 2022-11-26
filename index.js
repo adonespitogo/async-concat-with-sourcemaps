@@ -1,6 +1,6 @@
-var path = require("path");
 var { createHash } = require("crypto");
-var { writeFile, readFile, open, write, close } = require("fs/promises");
+var path = require("path");
+var { writeFile, readFile } = require("fs/promises");
 var { SourceMapGenerator, SourceMapConsumer } = require("source-map");
 
 function unixStylePath(filePath) {
@@ -8,14 +8,14 @@ function unixStylePath(filePath) {
 }
 
 function Concat(generateSourceMap, fileName, separator, tmpDir) {
-  var tmpFile = createHash("md5").update(String(Date.now())).digest("hex");
+  var hash = createHash("md5").update(String(Math.random())).digest("hex");
 
   this.useTmp = tmpDir !== undefined;
   this.lineOffset = 0;
   this.columnOffset = 0;
   this.sourceMapping = generateSourceMap;
   this.contentPartsCount = 0;
-  this.tmpFile = path.join(tmpDir || "/tmp", tmpFile + ".concat");
+  this.tmpFile = path.join(tmpDir || "/tmp", `${fileName}.${hash}.concat`);
   this.contentParts = [];
 
   if (separator === undefined) {
