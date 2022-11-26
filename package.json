@@ -27,7 +27,6 @@
     "coveralls": "^3.0.0",
     "faucet": "^0.0.3",
     "istanbul": "^0.4.5",
-    "jshint": "^2.9.5",
     "tape": "^4.9.0"
   },
   "files": [
