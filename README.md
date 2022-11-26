@@ -60,6 +60,10 @@ The resulting concatenated file content (Buffer). Returns a `Promise<Buffer>`.
 
 The resulting source map of the concatenated files (string). Returns a `Promise<string | undefined>`.
 
+### tmpFile
+
+Path to the temporary file.
+
 [coveralls-image]: https://img.shields.io/coveralls/adonespitogo/async-concat-with-sourcemaps.svg
 [coveralls-url]: https://coveralls.io/r/adonespitogo/async-concat-with-sourcemaps?branch=master
 [npm-image]: https://img.shields.io/npm/v/async-concat-with-sourcemaps.svg
