@@ -1,6 +1,6 @@
 var { createHash } = require("crypto");
 var path = require("path");
-var { writeFile, readFile } = require("fs/promises");
+var { writeFile, readFile, mkdir } = require("fs/promises");
 var { SourceMapGenerator, SourceMapConsumer } = require("source-map");
 
 function unixStylePath(filePath) {
@@ -55,6 +55,7 @@ Concat.prototype.add = async function (filePath, content, sourceMap) {
   }
 
   if (this.contentPartsCount > 0) {
+    await mkdir(path.dirname(this.tmpFile), { recursive: true })
     await this._appendContent(this.separator);
   } else {
     await writeFile(this.tmpFile, "");
