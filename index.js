@@ -55,9 +55,9 @@ Concat.prototype.add = async function (filePath, content, sourceMap) {
   }
 
   if (this.contentPartsCount > 0) {
-    await mkdir(path.dirname(this.tmpFile), { recursive: true })
     await this._appendContent(this.separator);
   } else {
+    await mkdir(path.dirname(this.tmpFile), { recursive: true })
     await writeFile(this.tmpFile, "");
   }
 
